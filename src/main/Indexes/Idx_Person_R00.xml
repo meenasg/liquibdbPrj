@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+<changeSet author="Meena" id="createIdx">
+ 
+    <createIndex catalogName="test"
+            indexName="idx_person_address"
+                tableName="person"
+		   unique="true">
+        <column name="address" type="varchar(255)"/>
+    </createIndex>
+    <rollback>
+                    drop index test.idx_person_address;
+        </rollback>
+        
+</changeSet>
+
+  
+</databaseChangeLog>
