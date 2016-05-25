@@ -7,7 +7,7 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
 
-	<include  file="R00/Master_R00.xml"/>
+	<include  file="src/main/R00/Master_R00.xml"/>
 
 	  <changeSet author="Meena" id="Release0.0">
 	 	 	        <tagDatabase tag="Release00_rollback"/>
