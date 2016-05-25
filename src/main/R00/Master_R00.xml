@@ -6,7 +6,7 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-	<include  file="../Tables/newTab_Person_R00.xml"/>
-	<include  file="../Indexes/Idx_Person_R00.xml"/>
+	<include  file="src/main/Tables/newTab_Person_R00.xml"/>
+	<include  file="src/main/Indexes/Idx_Person_R00.xml"/>
 	
 </databaseChangeLog>
